@@ -26,7 +26,7 @@ class SplashScreenPageState extends State<SplashScreenPage> {
   void initState() {
     print("splash init");
     _checkUser();
-    PrayerTimingRepo().setNotifications();
+
     super.initState();
     //Get.find<ProductCategoryController>().getProductCategories();
     // _loadResource();

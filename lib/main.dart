@@ -8,13 +8,16 @@ import 'package:monos/services/notification_service.dart';
 
 import 'features/calender_events/bloc/calender_events_bloc.dart';
 import 'features/calender_events/repository/calender_events_repo.dart';
+import 'features/prayer_timing/repository/prayer_timing_repo.dart';
 
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
 Future<void> main() async{
   WidgetsFlutterBinding.ensureInitialized();
   // await TokenStorage().removeAccessToken();
+
   await NotificationController.initializeLocalNotifications();
+  PrayerTimingRepo().setNotifications();
   runApp(const MyApp());
 }
 
