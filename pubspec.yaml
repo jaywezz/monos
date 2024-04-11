@@ -68,7 +68,7 @@ flutter_native_splash:
   android: true
   ios: true
   web: true
-  color: "#FFFFFF"
+  color: "#00BF62"
   # background_image: "assets/"
   image: assets/logos/play_store_512.png
   android_gravity: center
